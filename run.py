@@ -85,7 +85,7 @@ if __name__ == '__main__':
     scheduler.add_job(send_signal, 
                       trigger='interval', 
                       start_date=datetime_now,
-                      minutes=15,
+                      minutes=60,
                       seconds=5,
                       kwargs={'bot': bot})
     scheduler.start()
